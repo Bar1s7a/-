@@ -1,8 +1,13 @@
-#include <stdio.h>
-int main(void){
-    int x;
-    x = -3*4%-6+5; /*Выражение выполнится слева направо.*/
-    printf("%d", x);
-    return 0;
+#include<stdio.h>
+int main(){
+int x, i, y=0, t = 1, s = 1;
+scanf("%d", &x);
+    while ( x > 0 ){
+		y = y + x%10*t;
+		t *=2;
+		x= x / 10;
 }
-/*Программа выведет 5*/
+printf("%d", y);
+system ("pause");
+return 0;
+}
