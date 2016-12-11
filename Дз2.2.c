@@ -3,20 +3,20 @@
 int main(void) {
     int a, b, c, d;
     d = 1; c = 0;
-    printf("Ââåäèòå ÷èñëî\n");
+    printf("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾\n");
         scanf("%d", &a);
-    printf("Ââåäèòå ñòåïåíü\n");
+    printf("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚ÐµÐ¿ÐµÐ½ÑŒ\n");
         scanf("%d", &b);
     if (b > 0){
         while (c < b){
             d = a*d;
             c++;
         }
-        printf("Ðåçóëüòàò %d", d);
+        printf("Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ %d", d);
         return 0;
     } else if (b == 0){
-        printf("Ðåçóëüòàò 1");
+        printf("Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ 1");
         return 0;
-    } else printf("Íåïðàâèëüíî!");
+    } else printf("ÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð¾!");
     return 0;
 }
