@@ -4,26 +4,26 @@
 int main(void){
     setlocale(LC_ALL, "Rus");
     int row1, clm1, row2, clm2, i, j, x=0, y=0, z=0, k=0, sum=0;
-        printf("Введите размерность массивов.");
+        printf("Р’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂРЅРѕСЃС‚СЊ РјР°СЃСЃРёРІР°");
         scanf("%d %d %d %d", &row1, &clm1, &row2, &clm2);
     if(clm1!=row2){
-        printf("ошибка");
+        printf("РћРЁРР‘РљРђ");
         return 0;
     }
     int arr1[row1][clm1], arr2[row2][clm2], arr3[row1][clm2];
     for( i = 0; i < row1; i++ ){
-        printf("Введите количество %d строк.\n", i+1);
+        printf("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ %d СЃС‚СЂРѕРєРё\n", i+1);
         for ( j = 0; j < clm1; j++){
             scanf("%d", &arr1[i][j]);
         }
     }
     for( i = 0; i < row2; i++){
-        printf("Введите количество %d строк.\n", i+1);
+        printf("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ %d СЃС‚СЂРѕРєРё\n", i+1);
         for ( j = 0; j < clm2; j++ ){
             scanf("%d", &arr2[i][j]);
         }
     }
-    printf("Вам нужно умножить массивы.");
+    printf("Р’Р°Рј РЅСѓР¶РЅРѕ СѓРјРЅРѕР¶РёС‚СЊ РјР°СЃСЃРёРІС‹");
 
     for( i = 0; i < row1; i++){
         for ( j = 0; j < clm1; j++){
