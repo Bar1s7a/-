@@ -3,9 +3,9 @@
 int mail(void) {
     int a, b, c, d;
     d = 1; c = 0;
-    printf("Ââåäèòå ÷èñëî\n");
+    printf("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾\n");
         scanf("%d", &a);
-    printf("Ââåäèòå ñòåïåíü\n");
+    printf("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚ÐµÐ¿ÐµÐ½ÑŒ\n");
         scanf("%d", &b);
     if (b > 0){
         while (c < b){
@@ -14,12 +14,6 @@ int mail(void) {
         }
     } else if (b = 0){
         printf("0");
-    } else printf("Íåïðàâèëüíî!")
+    } else printf("ÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð¾!")
     printf("%d, d")
-}
-
-
-
-
-
 }
