@@ -5,11 +5,11 @@ int main (void){
     setlocale(LC_ALL, "Rus");
     int choose;
     float cels, fahr, kelv;
-    printf("Âûáåðèòå ôîðìàò òåìïåðàòóðû:\n 1)Öåëüñèé\n 2)Ôàðåíãåéò\n 3)Êåëâèí\n (Äëÿ âûáîðà èñïîëüçóéòå ÷èñëî.)");
+    printf("Ð’Ñ‹Ð±ÐµÑ€ÐµÑ‚Ðµ Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚ Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ñ‹:\n 1)Ð¦ÐµÐ»ÑŒÑÐ¸Ð¹\n 2)Ð¤Ð°Ñ€ÐµÐ½Ð³ÐµÐ¹Ñ‚\n 3)ÐšÐµÐ»ÑŒÐ²Ð¸Ð½\n (Ð”Ð»Ñ Ð²Ñ‹Ð±Ð¾Ñ€Ð° Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐ¹Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾.)");
     scanf("%d", &choose);
     switch (choose){
         case 1:{
-            printf("Ââåäèòå òåìïåðàòóðó.\n");
+            printf("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ñƒ.\n");
             scanf("%f", &cels);
             fahr = cels * 9 / 5 + 32;
             kelv = cels + 273;
@@ -17,7 +17,7 @@ int main (void){
             return 0;
         }
         case 2:{
-            printf("Ââåäèòå òåìïåðàòóðó.\n");
+            printf("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ñƒ.\n");
             scanf("%f", &fahr);
             cels = (fahr - 32)* 5 / 9;
             kelv = (fahr - 32)* 5 / 9 + 273;
@@ -25,7 +25,7 @@ int main (void){
             return 0;
         }
         case 3:{
-            printf("Ââåäèòå òåìïåðàòóðó.\n");
+            printf("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ñƒ.\n");
             scanf("%f", &kelv);
             if (kelv >= 0){
                 cels = kelv - 273;
@@ -33,7 +33,7 @@ int main (void){
                 printf("%.2f %.2f", cels, fahr);
                 return 0;
             } else if (kelv < 0){
-                printf("Íåâîçìîæíî!");
+                printf("ÐÐ•Ð’ÐžÐ—ÐœÐžÐ–ÐÐž!");
                 return 0;
             }
         }
