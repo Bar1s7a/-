@@ -1,13 +1,14 @@
+#include<stdlib.h>
 #include<stdio.h>
+
 int main(){
-int x, i, y=0, t = 1, s = 1;
-scanf("%d", &x);
-    while ( x > 0 ){
-		y = y + x%10*t;
-		t *=2;
-		x= x / 10;
+	int a, b, s = 1, i = 1;
+	scanf("%d %d", &a, &b);
+	while(i < = b){
+		s = s * a;
+		i++;
 }
-printf("%d", y);
-system ("pause");
-return 0;
+	printf("%d -> %d\n", a, s);
+	system("pause");
+	return 0;
 }
