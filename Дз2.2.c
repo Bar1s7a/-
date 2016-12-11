@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include <locale.h>
 
 int main(void) {
+    setlocale(LC_ALL, "Rus");
     int a, b, c, d;
     d = 1; c = 0;
     printf("Введите число\n");
