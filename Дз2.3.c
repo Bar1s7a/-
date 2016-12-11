@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <math.h>
+#include <locale.h>
 
 int main(void){
+    setlocale(LC_ALL, "Rus");
     float D, d, a, b, c, x1, x2;
     scanf("%f %f %f", &a, &b, &c);
     D = b*b - 4*a*c;
@@ -14,6 +16,6 @@ int main(void){
         x1 = x2 = -d / 2*a;
         printf("x1 = x2 = %.2f", x1);
     } else if (D < 0) {
-        printf("Íåò îòâåòà!");
+        printf("ÐÐ•Ð¢ ÐšÐžÐ ÐÐ•Ð™!");
     }
 }
