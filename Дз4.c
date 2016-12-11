@@ -5,7 +5,7 @@
 int main(){
 float a, b, c, D, j, x1, x2, x;
 scanf("%f %f %f", &a, &b, &c);
-    if ( a == 0 ){
+	if ( a == 0 ){
         x = c/b;
         printf("x=%d", x);
         return 0;
