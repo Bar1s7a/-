@@ -12,13 +12,13 @@ int main(void){
     }
     int arr1[row1][clm1], arr2[row2][clm2], arr3[row1][clm2];
     for( i = 0; i < row1; i++ ){
-        printf("Введите количество %d строки\n", i+1);
+        printf("Введите количество %d строк\n", i+1);
         for ( j = 0; j < clm1; j++){
             scanf("%d", &arr1[i][j]);
         }
     }
     for( i = 0; i < row2; i++){
-        printf("Введите количество %d строки\n", i+1);
+        printf("Введите количество %d строк\n", i+1);
         for ( j = 0; j < clm2; j++ ){
             scanf("%d", &arr2[i][j]);
         }
